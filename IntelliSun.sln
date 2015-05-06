@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelliSun", "Source\IntelliSun\IntelliSun.csproj", "{7B0F2D93-52B7-44F6-AC86-E1CD93755065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelliSun.Aim", "Source\IntelliSun.Aim\IntelliSun.Aim.csproj", "{9BAF8392-C7B8-4EB1-9DBC-79BD150FCB7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelliSun.Tests", "Tests\IntelliSun.Tests\IntelliSun.Tests.csproj", "{A0883E2C-204E-4B40-B0B6-1F39A01889BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3CB50C80-853A-4C3D-A670-92D19EEAE403}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Source", ".Source", "{F194D504-9B7D-45E4-9F09-C24873080A74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B0F2D93-52B7-44F6-AC86-E1CD93755065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B0F2D93-52B7-44F6-AC86-E1CD93755065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B0F2D93-52B7-44F6-AC86-E1CD93755065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B0F2D93-52B7-44F6-AC86-E1CD93755065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BAF8392-C7B8-4EB1-9DBC-79BD150FCB7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BAF8392-C7B8-4EB1-9DBC-79BD150FCB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BAF8392-C7B8-4EB1-9DBC-79BD150FCB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BAF8392-C7B8-4EB1-9DBC-79BD150FCB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0883E2C-204E-4B40-B0B6-1F39A01889BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0883E2C-204E-4B40-B0B6-1F39A01889BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0883E2C-204E-4B40-B0B6-1F39A01889BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0883E2C-204E-4B40-B0B6-1F39A01889BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B0F2D93-52B7-44F6-AC86-E1CD93755065} = {F194D504-9B7D-45E4-9F09-C24873080A74}
+		{9BAF8392-C7B8-4EB1-9DBC-79BD150FCB7D} = {F194D504-9B7D-45E4-9F09-C24873080A74}
+		{A0883E2C-204E-4B40-B0B6-1F39A01889BE} = {3CB50C80-853A-4C3D-A670-92D19EEAE403}
+	EndGlobalSection
+EndGlobal

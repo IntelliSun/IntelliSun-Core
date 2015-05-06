@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B0F2D93-52B7-44F6-AC86-E1CD93755065}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntelliSun</RootNamespace>
+    <AssemblyName>IntelliSun</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheObject.cs" />
+    <Compile Include="CacheProvider.cs" />
+    <Compile Include="CacheProvider.String.cs" />
+    <Compile Include="CachingExtensions.cs" />
+    <Compile Include="ClrExtensions\StringBuilderExtensions.cs" />
+    <Compile Include="Collections\CloseEnumerable.cs" />
+    <Compile Include="Collections\CollectionExtensions.cs" />
+    <Compile Include="Collections\DictionaryEntries.cs" />
+    <Compile Include="Collections\DictionaryExtensions.cs" />
+    <Compile Include="Collections\DynamicIndexComparer.cs" />
+    <Compile Include="Collections\EnumerableExtensions.cs" />
+    <Compile Include="Collections\EnumerableHelper.cs" />
+    <Compile Include="Collections\EnumerableSelection.cs" />
+    <Compile Include="Collections\EnumerableUtils.cs" />
+    <Compile Include="Collections\EnumerationBuilder.cs" />
+    <Compile Include="Collections\GroupedDictionary.cs" />
+    <Compile Include="Collections\GroupedList.cs" />
+    <Compile Include="Collections\IMapEntries.cs" />
+    <Compile Include="Collections\ImmutableCollection.cs" />
+    <Compile Include="Collections\IMutableSet.cs" />
+    <Compile Include="Collections\IndexedComparison.cs" />
+    <Compile Include="Collections\Indexer.cs" />
+    <Compile Include="Collections\InstanceIndexer.cs" />
+    <Compile Include="Collections\IntelliSun_CollectionDebugView.cs" />
+    <Compile Include="Collections\IPairEnumerable.cs" />
+    <Compile Include="Collections\IIndexer.cs" />
+    <Compile Include="Collections\IReadonlyMapEntries.cs" />
+    <Compile Include="Collections\LambdaIndexer.cs" />
+    <Compile Include="Collections\ListExtensions.cs" />
+    <Compile Include="Collections\LiveIndexer.cs" />
+    <Compile Include="Collections\PriorityQueue.cs" />
+    <Compile Include="Collections\ProgressiveEnumerator.cs" />
+    <Compile Include="Collections\VirtualEnumerable.cs" />
+    <Compile Include="ComponentModel\Composition\ExtensionAssemblyAttribute.cs" />
+    <Compile Include="ComponentModel\Composition\ExtensionProviderExtensions.cs" />
+    <Compile Include="ComponentModel\Composition\IExtensionProvider.cs" />
+    <Compile Include="ComponentModel\Composition\IServiceExporter.cs" />
+    <Compile Include="ComponentModel\Composition\IServiceLoader.cs" />
+    <Compile Include="ComponentModel\Composition\IServiceLocator.cs" />
+    <Compile Include="ComponentModel\Composition\ServiceLocationException.cs" />
+    <Compile Include="ComponentModel\Composition\ServiceLocatorBase.cs" />
+    <Compile Include="ComponentModel\DisposeHandler.cs" />
+    <Compile Include="ComponentModel\IComponentContainer.cs" />
+    <Compile Include="ComponentModel\IComponentRegistry.cs" />
+    <Compile Include="ComponentModel\IExtensionProvider.cs" />
+    <Compile Include="ComponentModel\IInstanceProvider.cs" />
+    <Compile Include="ComponentModel\IndexProvider.cs" />
+    <Compile Include="ComponentModel\IService.cs" />
+    <Compile Include="ComponentModel\IServiceConsumer.cs" />
+    <Compile Include="ComponentModel\IServiceRegistry.cs" />
+    <Compile Include="ComponentModel\ServiceAttribute.cs" />
+    <Compile Include="ComponentModel\ServiceBase.cs" />
+    <Compile Include="ComponentModel\ServiceBox.cs" />
+    <Compile Include="ComponentModel\ServiceEventArgs.cs" />
+    <Compile Include="ComponentModel\ServiceModel.cs" />
+    <Compile Include="ComponentModel\ServiceProviderAttribute.cs" />
+    <Compile Include="ComponentModel\ServiceRegistry.cs" />
+    <Compile Include="ComponentModel\SimpleComponentContainer.cs" />
+    <Compile Include="DataObserver.cs" />
+    <Compile Include="Diagnostics\CollectionDebugView.cs" />
+    <Compile Include="DisposableProxy.cs" />
+    <Compile Include="DisposeBlock.cs" />
+    <Compile Include="Exceptions\ObjectNotInitializedException.cs" />
+    <Compile Include="Expressions\ExpressionCompiler.cs" />
+    <Compile Include="Expressions\ExpressionEvaluator.cs" />
+    <Compile Include="Expressions\ExpressionHelper.cs" />
+    <Compile Include="FallbackRefValue.cs" />
+    <Compile Include="FallbackValue.cs" />
+    <Compile Include="FiltersRelation.cs" />
+    <Compile Include="Flags.cs" />
+    <Compile Include="FlagsExtensions.cs" />
+    <Compile Include="FlagsResult.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Helpers\Aco\Aco.cs" />
+    <Compile Include="Helpers\Aco\IBlockHandle.cs" />
+    <Compile Include="Helpers\Aco\Rax.cs" />
+    <Compile Include="Helpers\ArrayHelpers.cs" />
+    <Compile Include="Helpers\CasingOption.cs" />
+    <Compile Include="Helpers\CaseOption.cs" />
+    <Compile Include="Helpers\IInteractiveFormatArgs.cs" />
+    <Compile Include="Helpers\InteractiveFormatParams.cs" />
+    <Compile Include="Helpers\IsExpressionType.cs" />
+    <Compile Include="Helpers\MathHelper.cs" />
+    <Compile Include="Helpers\SequentialFormat\CalcSequentialExpression.cs" />
+    <Compile Include="Helpers\SequentialFormat\SequentialExpressionBase.cs" />
+    <Compile Include="Helpers\SequentialFormat\ComplexSequentialExpression.cs" />
+    <Compile Include="Helpers\SequentialFormat\ExpressionKey.cs" />
+    <Compile Include="Helpers\SequentialFormat\IndexSequentialExpression.cs" />
+    <Compile Include="Helpers\SequentialFormat\ISequentialExpression.cs" />
+    <Compile Include="Helpers\SequentialFormat\SequentialFormatter.cs" />
+    <Compile Include="Helpers\SequentialFormat\StaticSequentialExpression.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="IConverter.Generic.cs" />
+    <Compile Include="IDataObserver.cs" />
+    <Compile Include="IDataObserver.Generic.cs" />
+    <Compile Include="IFormatter.cs" />
+    <Compile Include="IFormatter.Generic.cs" />
+    <Compile Include="IInitializable.cs" />
+    <Compile Include="INestedLayerData.cs" />
+    <Compile Include="InitializableBase.cs" />
+    <Compile Include="INotifyDisposed.cs" />
+    <Compile Include="INotifyDisposing.cs" />
+    <Compile Include="InstanceManager.cs" />
+    <Compile Include="IObjectFilter.cs" />
+    <Compile Include="IObservable.cs" />
+    <Compile Include="IO\ConcurrentReader.cs" />
+    <Compile Include="IO\DataStructureType.cs" />
+    <Compile Include="IO\DataStructureTypeHelper.cs" />
+    <Compile Include="IO\Extentions.cs" />
+    <Compile Include="IO\Helpers.cs" />
+    <Compile Include="IO\IniStrcuture\IniCategory.cs" />
+    <Compile Include="IO\IniStrcuture\IniCommentChar.cs" />
+    <Compile Include="IO\IniStrcuture\IniEntry.cs" />
+    <Compile Include="IO\IniStrcuture\IniEntryType.cs" />
+    <Compile Include="IO\IniStrcuture\IniFile.cs" />
+    <Compile Include="IO\IniStrcuture\IniHeader.cs" />
+    <Compile Include="IO\IniStrcuture\IniKeyTypeIdentifier.cs" />
+    <Compile Include="IO\IniStrcuture\IniObject.cs" />
+    <Compile Include="IO\IniStrcuture\IniParameters.cs" />
+    <Compile Include="IO\IniStrcuture\IniTypeHelper.cs" />
+    <Compile Include="IO\ObservableTextWriter.cs" />
+    <Compile Include="IO\PathHelper.cs" />
+    <Compile Include="IO\RelativeDirectory.cs" />
+    <Compile Include="IO\TransferType.cs" />
+    <Compile Include="IValueConverter.cs" />
+    <Compile Include="IValueValidator.cs" />
+    <Compile Include="LambdaDataObserver.cs" />
+    <Compile Include="LambdaDataObserver.Generic.cs" />
+    <Compile Include="Logging\BasicDebugLogger.cs" />
+    <Compile Include="Logging\DebugTextWriter.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\LogCategory.cs" />
+    <Compile Include="Logging\LogFormatter.cs" />
+    <Compile Include="Logging\LoggerBase.cs" />
+    <Compile Include="Logging\LogLevel.cs" />
+    <Compile Include="Logging\LogText.cs" />
+    <Compile Include="Logging\NullLogger.cs" />
+    <Compile Include="Logging\TextLogger.cs" />
+    <Compile Include="LoopAction.cs" />
+    <Compile Include="LoopEventArgs.cs" />
+    <Compile Include="LoopNotifier.cs" />
+    <Compile Include="NestedLoop.cs" />
+    <Compile Include="NestedLoopHandler.cs" />
+    <Compile Include="NestedLoopLayer.cs" />
+    <Compile Include="ObjectEqualityComparer.cs" />
+    <Compile Include="ObjectFilterCollection.cs" />
+    <Compile Include="ObjectFilterSet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\InstanceSettings.cs" />
+    <Compile Include="Reflection\IPropertyAttributeInfo.cs" />
+    <Compile Include="Reflection\MemberAttributesPair.cs" />
+    <Compile Include="Reflection\MemberExtenderExtensions.cs" />
+    <Compile Include="Reflection\MemberInfoExtender.cs" />
+    <Compile Include="Reflection\MemberInfoExtenderBase.cs" />
+    <Compile Include="Reflection\MethodExtensions.cs" />
+    <Compile Include="Reflection\MethodInfoExtender.cs" />
+    <Compile Include="Reflection\PropertyAttributeInfo.cs" />
+    <Compile Include="Reflection\PropertyExtensions.cs" />
+    <Compile Include="Reflection\PropertyInfoExtender.cs" />
+    <Compile Include="Reflection\ReflectionHelper.cs" />
+    <Compile Include="Reflection\RuntimeInjector.cs" />
+    <Compile Include="Reflection\RuntimePropertySetter.cs" />
+    <Compile Include="Reflection\SignatureStringProvider.cs" />
+    <Compile Include="Reflection\TypeExtensions.cs" />
+    <Compile Include="Reflection\TypeInfoExtender.cs" />
+    <Compile Include="Reflection\Unify\IReflectData.cs" />
+    <Compile Include="Reflection\Unify\IReflectInfo.cs" />
+    <Compile Include="Reflection\Unify\ReflectData.cs" />
+    <Compile Include="Reflection\Unify\ReflectFieldInfo.cs" />
+    <Compile Include="Reflection\Unify\ReflectInfo.cs" />
+    <Compile Include="Reflection\Unify\ReflectMemberInfo.cs" />
+    <Compile Include="Reflection\Unify\ReflectMethodInfo.cs" />
+    <Compile Include="Reflection\Unify\ReflectParameterInfo.cs" />
+    <Compile Include="Reflection\Unify\ReflectPropertyInfo.cs" />
+    <Compile Include="Reflection\Unify\UnifyReflection.cs" />
+    <Compile Include="StringEqualiyComparer.cs" />
+    <Compile Include="Text\CharRepeater.cs" />
+    <Compile Include="Text\CharsRange.cs" />
+    <Compile Include="Text\CompositionBuilderContext.cs" />
+    <Compile Include="Text\Dwr\ConsoleWriter.cs" />
+    <Compile Include="Text\StringCompositionProvider.cs" />
+    <Compile Include="Text\ICharsInserter.cs" />
+    <Compile Include="Text\ICompositionBuilderContext.cs" />
+    <Compile Include="Text\IStringCompositionProvider.cs" />
+    <Compile Include="Text\IStringFormatter.cs" />
+    <Compile Include="Text\ReflectionCompositionProvider.cs" />
+    <Compile Include="Text\StringCompositionAttribute.cs" />
+    <Compile Include="Text\StringCompositionBuilder.cs" />
+    <Compile Include="Text\StringCompositionPartAttribute.cs" />
+    <Compile Include="Text\StringCompositor.cs" />
+    <Compile Include="Text\StringFactory.cs" />
+    <Compile Include="Text\TextIterator.cs" />
+    <Compile Include="Text\TextPart.cs" />
+    <Compile Include="Text\TextParts.cs" />
+    <Compile Include="Text\TokenFormatter.cs" />
+    <Compile Include="Threading\ThreadLock.cs" />
+    <Compile Include="Unmanaged.cs" />
+    <Compile Include="ValueValidator.cs" />
+    <Compile Include="ValueValidatorResult.cs" />
+    <Compile Include="_TODO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\ObjectUtils\" />
+    <Folder Include="IO\Binary\" />
+    <Folder Include="IO\Net\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
